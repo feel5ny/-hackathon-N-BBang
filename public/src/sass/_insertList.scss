@@ -1,0 +1,147 @@
+/****************************
+ insertList 시작 
+****************************/
+@import "variables";
+
+.insertList{
+  position: relative;
+  margin-top : 10px;
+  /* background-color: blue; */
+}
+
+.insertCard{
+  border : 2px solid map-get($brand-color,main2);
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.cardHeader{
+  background-color: map-get($brand-color,main2);
+  /* border-radius : 0px; */
+  color: white;
+  padding: 5px;
+}
+.cardHeader > p{
+  display: inline-block;
+}
+
+.cardHeader > img{
+  display: inline-block;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  width: 15px;
+}
+
+
+.cardBody{
+  background-color: rgba(245, 245, 245, 0.9);
+}
+.cardBodyLeft{
+  background: white;  
+  padding : 10px;
+}
+
+.cardBodyRight{
+  padding : 10px;
+  background-color: rgba(245,245,245,0.9);
+  margin:0;
+  position: relative;
+  float: right;
+}
+
+p.label{
+  display: inline-block;
+  position: relative;
+  right:0;
+}
+.anotherPeople{
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+.calPeople{
+  display: inline-block;
+  position: relative;
+  float: right;
+}
+
+.moneyCal{
+  margin-top: 20px; 
+  /* background-color: blue; */
+}
+
+.totalMoney,
+.getMoney,
+.leftMoney{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.leftMoney{
+  margin-top: 5px;
+}
+
+.leftMoney > img{
+  width: 23px;
+}
+
+.totalMoney > p,
+.getMoney > p,
+.leftMoney > p{
+  display: inline-block;
+}
+.totalMoney > label,
+.getMoney > label,
+.leftMoney > label{
+  display: inline-block;
+  font-size:  $font-size-small - 1;
+}
+
+.rightTotalMoney,
+.rightGetMoney,
+.rightLeftMoney{
+  /* display: inline-block; */
+  float: right;
+  position: relative;
+  font-size: $font-size-medium;
+}
+
+.leftMoney{
+  border-top: 1px solid rgba(151, 151, 151, 0.34);;
+}
+
+.ui.checkbox{
+  display: flex;
+  justify-content: space-between;
+}
+
+.getPeople1,
+.getPeople2,
+.getPeople3{
+  padding-top: 15px;
+}
+
+.getPeople1 > label > p,
+.getPeople2 > label > p,
+.getPeople3 > label > p{
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+.getPeople{
+  margin-top: 20px;
+}
+
+#gitimg {
+  width: 20px;
+}
+
+// .grey{
+//   background-color: rgba(245, 245, 245, 0.9);
+// }
+/****************************
+ insertList 종료 
+****************************/

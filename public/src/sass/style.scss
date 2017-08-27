@@ -1,0 +1,83 @@
+@import "insertList";
+@import "addBox";
+@font-face{ 
+  font-family:'tmonmonsori'; 
+  src: url('/src/font/TmonMonsori.ttf'); 
+}
+
+*{
+  margin : 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width : $grid-width;
+  margin: 0 auto;  
+  background : {
+    image : url("/src/img/bg_pattern.svg");
+    position-y: 50%;
+    repeat: no-repeat;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: map-get($brand-color,main1);
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  img {
+    display: none;
+    position : absolute;
+    top : 0;
+  }
+}
+
+#head {
+  width: 300px;
+}
+
+#addBtn {
+  font: {
+    family: 'tmonmonsori';
+    weight: 100;
+    size: $font-size-medium;
+  }
+  line-height: 20px;
+  width: 100%;
+  color : map-get($brand-color,main1);
+  cursor : pointer;
+  background : url("/src/img/coin_btn.png"), map-get($brand-color,main2);
+  background: {
+    repeat: no-repeat;
+    position-y: 100%;
+    position-x: 25%;
+  }
+}
+
+.footer {
+  border-top : 1px dashed map-get($brand-color,main2);
+  display: block;
+  position: relative;
+  bottom : 0px;
+  padding-top:30px;
+  width: $grid-width;
+  margin-top : 50px;
+  text-align: center;
+  left : 50%;
+  transform: translateX(-50%);
+  p{
+    color : map-get($brand-color,main2);
+    margin-bottom: 30px;
+  }
+}
+
+#footerImg {
+  bottom : 0px;
+  position: relative;
+}
