@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/****************************
+ insertList 시작 
+****************************/
+.insertList {
+  position: relative;
+  margin-top: 10px;
+  /* background-color: blue; */ }
+
+.insertCard {
+  border: 2px solid #2F3C72;
+  border-radius: 4px;
+  margin-top: 10px; }
+
+.cardHeader {
+  background-color: #2F3C72;
+  /* border-radius : 0px; */
+  color: white;
+  padding: 5px; }
+
+.cardHeader > p {
+  display: inline-block; }
+
+.cardHeader > img {
+  display: inline-block;
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  width: 15px; }
+
+.cardBody {
+  background-color: rgba(245, 245, 245, 0.9); }
+
+.cardBodyLeft {
+  background: white;
+  padding: 10px; }
+
+.cardBodyRight {
+  padding: 10px;
+  background-color: rgba(245, 245, 245, 0.9);
+  margin: 0;
+  position: relative;
+  float: right; }
+
+p.label {
+  display: inline-block;
+  position: relative;
+  right: 0; }
+
+.anotherPeople {
+  display: inline-block;
+  position: relative;
+  float: right; }
+
+.calPeople {
+  display: inline-block;
+  position: relative;
+  float: right; }
+
+.moneyCal {
+  margin-top: 20px;
+  /* background-color: blue; */ }
+
+.totalMoney,
+.getMoney,
+.leftMoney {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.leftMoney {
+  margin-top: 5px; }
+
+.leftMoney > img {
+  width: 23px; }
+
+.totalMoney > p,
+.getMoney > p,
+.leftMoney > p {
+  display: inline-block; }
+
+.totalMoney > label,
+.getMoney > label,
+.leftMoney > label {
+  display: inline-block;
+  font-size: 12px; }
+
+.rightTotalMoney,
+.rightGetMoney,
+.rightLeftMoney {
+  /* display: inline-block; */
+  float: right;
+  position: relative;
+  font-size: 23px; }
+
+.leftMoney {
+  border-top: 1px solid rgba(151, 151, 151, 0.34); }
+
+.ui.checkbox {
+  display: flex;
+  justify-content: space-between; }
+
+.getPeople1,
+.getPeople2,
+.getPeople3 {
+  padding-top: 15px; }
+
+.getPeople1 > label > p,
+.getPeople2 > label > p,
+.getPeople3 > label > p {
+  display: inline-block;
+  float: right;
+  position: relative; }
+
+.getPeople {
+  margin-top: 20px; }
+
+#gitimg {
+  width: 20px; }
+
+/****************************
+ insertList 종료 
+****************************/
+/****************************
+ addBox 시작 
+****************************/
+.label {
+  font-size: 13px;
+  color: #2F3C72;
+  font-weight: 600;
+  display: block; }
+
+form {
+  margin-top: 10px; }
+
+#plusPeople {
+  float: right;
+  cursor: pointer; }
+
+.form {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid rgba(101, 109, 142, 0.64); }
+  .form:focus {
+    border: 2px solid #fdca6b;
+    outline: none; }
+
+.col-8 {
+  width: 49%;
+  display: inline-block;
+  /* background-color: red; */
+  /* margin-right: 5px; */ }
+
+.col-8.left {
+  width: 49%;
+  display: inline-block;
+  margin-right: 3px; }
+
+input {
+  margin-top: 6px; }
+
+#submitBtn, .addCancel {
+  width: 49%;
+  display: inline-block; }
+
+.addCancel {
+  margin-right: 5px; }
+
+.activeBtn {
+  background-color: #2F3C72;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px; }
+
+.cancelBtn {
+  background-color: #d8d8d8;
+  color: #474f58;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px; }
+
+/****************************
+ addBox 끝 
+****************************/
+@font-face {
+  font-family: 'tmonmonsori';
+  src: url("/src/font/TmonMonsori.ttf"); }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.wrapper {
+  width: 400px;
+  margin: 0 auto;
+  background-image: url("/src/img/bg_pattern.svg");
+  background-position-y: 50%;
+  background-repeat: no-repeat; }
+
+a {
+  text-decoration: none;
+  color: #fdca6b; }
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px; }
+  .title img {
+    display: none;
+    position: absolute;
+    top: 0; }
+
+#head {
+  width: 300px; }
+
+#addBtn {
+  font-family: 'tmonmonsori';
+  font-weight: 100;
+  font-size: 23px;
+  line-height: 20px;
+  width: 100%;
+  color: #fdca6b;
+  cursor: pointer;
+  background: url("/src/img/coin_btn.png"), #2F3C72;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-position-x: 25%; }
+
+.footer {
+  border-top: 1px dashed #2F3C72;
+  display: block;
+  position: relative;
+  bottom: 0px;
+  padding-top: 30px;
+  width: 400px;
+  margin-top: 50px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%); }
+  .footer p {
+    color: #2F3C72;
+    margin-bottom: 30px; }
+
+#footerImg {
+  bottom: 0px;
+  position: relative; }
